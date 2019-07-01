@@ -21,7 +21,7 @@ function search_office()
         beforeSend : function()
         {
             console.log("beforesend.....");
-            $.blockUI({
+            $('#card-area').block({
                 message: '<div class="spinner-grow text-primary display-4" style="width: 4rem; height: 4rem;" role="status"><span class="sr-only">Loading...</span></div>',
                 overlayCSS : { 
                   backgroundColor: '#ffffff',
@@ -39,7 +39,7 @@ function search_office()
             fetch_officr(obj);
         },
     complete :function(){
-        $.unblockUI();
+        $('#card-area').unblock();
             }	
         });
 }
