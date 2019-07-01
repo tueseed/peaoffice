@@ -51,7 +51,7 @@ function fetch_officr(obj)
     while(obj[i])
     {
         console.log(obj[i].pea_name);
-        html_card = html_card + '<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-3"><div class="card" ><div class="card-body"><div class="row"><div class="col-auto"><p>การไฟฟ้า: '+obj[i].pea_name+'</p><p>การไฟฟ้า: '+obj[i].pea_code+'</p></div><div class="col"><span class="text-primary"><i class="fas fa-info-circle fa-2x float-right"></i><span></div></div></div> </div></div>';
+        html_card = html_card + '<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-3"><div class="card" ><div class="card-body"><div class="row"><div class="col-auto"><p>การไฟฟ้า: '+obj[i].pea_name+'</p><p>รหัส: '+obj[i].pea_code+'</p></div><div class="col"><span class="text-primary"><i class="fas fa-info-circle fa-2x float-right"></i><span></div></div></div> </div></div>';
         i++;
     }
     $('#card-area').html(html_card);
